@@ -21,8 +21,8 @@ public class ListerCollaborateursController extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws
 	ServletException, IOException {
 		// utilisation du service
-		@SuppressWarnings("unused")
 		List<Collaborateur> collaborateurs = collabService.listerCollaborateurs();
+		req.setAttribute("listCollaborateur", collaborateurs);
 		req.getRequestDispatcher("/WEB-INF/views/collab/listerCollaborateurs.jsp").forward(req, resp);
 	}
 }
