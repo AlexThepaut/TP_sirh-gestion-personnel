@@ -13,12 +13,16 @@ import dev.sgp.service.CollaborateurService;
 import dev.sgp.util.Constantes;
 
 public class ListerCollaborateursController extends HttpServlet {
+
+	private static final long serialVersionUID = 4775538020842020128L;
 	// recuperation du service
 	private CollaborateurService collabService = Constantes.COLLAB_SERVICE;
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws
 	ServletException, IOException {
 		// utilisation du service
+		@SuppressWarnings("unused")
 		List<Collaborateur> collaborateurs = collabService.listerCollaborateurs();
+		req.getRequestDispatcher("/WEB-INF/views/collab/listerCollaborateurs.jsp").forward(req, resp);
 	}
 }
