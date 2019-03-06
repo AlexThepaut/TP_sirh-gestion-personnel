@@ -1,0 +1,8 @@
+dev\sgp\web\EditerCollaborateurControlleur.class
+dev\sgp\entite\Departement.class
+dev\sgp\entite\Collaborateur.class
+dev\sgp\service\DepartementService.class
+dev\sgp\util\Constantes.class
+dev\sgp\web\ListerCollaborateursController.class
+dev\sgp\service\CollaborateurService.class
+dev\sgp\web\AjouterCollaborateurControlleur.class

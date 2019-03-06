@@ -22,7 +22,7 @@ public class ListerCollaborateursController extends HttpServlet {
 	ServletException, IOException {
 		// utilisation du service
 		List<Collaborateur> collaborateurs = collabService.listerCollaborateurs();
-		req.setAttribute("listCollaborateur", collaborateurs);
+		req.setAttribute("listCollaborateurs", collaborateurs);
 		req.getRequestDispatcher("/WEB-INF/views/collab/listerCollaborateurs.jsp").forward(req, resp);
 	}
 }

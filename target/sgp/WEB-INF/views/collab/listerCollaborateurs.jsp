@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <%@page import="javax.swing.text.StyledEditorKit.ForegroundAction"%>
 <%@page import="java.util.List"%>
 <%@page import="dev.sgp.entite.Collaborateur"%>
@@ -51,11 +51,11 @@
 				}
 			}
 			%>
-			
+			<!--
 			<c:set var="listCollab" scope="session" value="${param.listCollab}" />
 			<c:forEach items="${ listCollab }" var="collab">
 				<p><c:out value="${ collab.getNom() }" /></p>
-			</c:forEach> 
+			</c:forEach>  -->
 			</div>		
 		</div>
 	</body>
